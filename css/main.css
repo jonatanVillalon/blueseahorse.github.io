@@ -1,0 +1,182 @@
+.body-game {
+    background: rgb(52,143,80);
+    background: linear-gradient(90deg, rgba(52,143,80,1) 0%, rgba(86,180,211,1) 100%);
+    color: #333;
+    font: 14px 'Arial',sans-serif;
+    text-align: center;
+}
+a {
+    color: #506e2f;
+    text-decoration: none;
+    text-align: center;
+}
+.loguito
+    {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    }
+.loguito li
+    {
+    float: left;
+    }
+.img-logo
+    {
+    width: 120px;
+    height: 200px;
+    }
+.logo
+    {
+    position: relative;
+    right: 50px;
+    }
+div.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.pequeño
+    {
+    flex-grow: 2;
+    }
+aside {
+    flex-grow: 2;
+    background-color: white; 
+    border-radius: 30px;
+    box-shadow: 0 0 20px, inset 0 0 10px;
+}
+aside img
+    {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+    }
+.derecha h3.tituloPuntuaciones {
+    padding: 10px;
+    position: relative;
+    right: 5px;
+}
+.derecha ul#puntuaciones {
+    width: 300px;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    display: table;
+}
+.derecha ul#puntuaciones li{
+    line-height:1.5em;
+    border-bottom:1px solid #aaa;
+    width: 50%;
+    padding: 10px 0;
+    display: inline-flex;
+    position: relative;
+}
+div.juego {
+    flex-grow: 8;
+}
+div.juego canvas {
+    box-shadow: 0 0 30px 1.5px #000;
+    border: 10px solid black;
+    width: 1200px;
+    height: 720px;
+}
+.negrita {
+    font-weight: bold;
+}
+ul.lista {
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+}
+.abajo
+    {
+    display: flex;
+    justify-content: center;
+    }
+.abajo-responsive
+    {
+    justify-content: center;
+    display: none;
+    }
+.abajo h1
+    {
+    text-align: center;
+    }
+ul.lista-controles {
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center
+}
+ul.lista-controles li {
+    padding: 10px 0;
+    float: left;
+    margin: 10px;
+}
+ul.lista li.derecha, ul.lista li.espacio {
+    padding-left: 40px;
+}
+ul.lista li.titulo {
+    font-weight: bold;
+}
+.className
+    {
+    text-align: center;
+    }
+.logo
+    {
+    font-size: 3em;
+    color: blue;
+    font-family: sans-serif;
+    }
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Estilos a partir de aquí */
+    .abajo
+        {
+        display: none !important;
+        }
+    .abajo-responsive
+        {
+        display: flex !important;
+        }
+    div .juego canvas 
+        {
+        width: 780px;
+        height: 500px;
+        }
+    aside
+        {
+        margin-top: 30px !important;
+        width: 50% !important;
+        }
+}
+
+/* iPads (vertical y horizontal) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Estilos a partir de aquí */
+    .abajo
+        {
+        display: none !important;
+        }
+    .abajo-responsive
+        {
+        display: flex !important;
+        } 
+     div .juego canvas 
+        {
+        width: 780px;
+        height: 500px;
+        }
+    aside
+        {
+        margin-top: 30px !important;
+        }       
+}
